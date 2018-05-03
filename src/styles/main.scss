@@ -8,6 +8,14 @@ $grey-dark: #525050;
 
 @media (min-width: 0px) {
 
+  .researches__bg {
+    background-color: $grey-light;
+  }
+
+  .info-about {
+    margin-top: 30px;
+  }
+
   body {
     padding-bottom: 197px;
   }
@@ -66,6 +74,10 @@ $grey-dark: #525050;
 
 @media (min-width: 350px) {
 
+  .researches__bg {
+    background: url("../img/researches-block-bg.jpg") center no-repeat;
+  }
+
   .header {
     &__row:first-child {
       display: flex;
@@ -98,6 +110,10 @@ $grey-dark: #525050;
 
   .slider {
     display: block;
+  }
+
+  .info-about {
+    margin-top: 0;
   }
 
   .contacts-form__label {
@@ -426,6 +442,13 @@ h4 {
   flex-direction: column;
   align-items: center;
 
+  &__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &__text {
     margin-top: 20px;
     padding: 0 20px 30px 20px;
@@ -433,12 +456,6 @@ h4 {
 }
 
 .researches{
-  min-height: 350px;
-  width: 100%;
-
-  &__bg {
-    background: url("../img/researches-block-bg.jpg") center no-repeat;
-  }
 
   &__content {
     padding-top: 30px;
