@@ -1,12 +1,12 @@
-$color-main: #182e6a;
-$color-white: white;
-$color-black: black;
+@media (max-width: 540px) {
 
-$grey-light: #efefef;
-$grey: #797979;
-$grey-dark: #525050;
+  .footer__address {
+    max-width: 280px;
+  }
 
-@media (min-width: 0px) {
+  .drop-down-menu {
+    display: none;
+  }
 
   .researches__bg {
     background-color: $grey-light;
@@ -17,7 +17,7 @@ $grey-dark: #525050;
   }
 
   body {
-    padding-bottom: 197px;
+    padding-bottom: 188px;
   }
 
   .slider {
@@ -48,10 +48,6 @@ $grey-dark: #525050;
     display: flex;
   }
 
-  .drop-down-menu {
-    display: flex;
-  }
-
   .contacts-form__label {
     display: none;
   }
@@ -72,7 +68,41 @@ $grey-dark: #525050;
   }
 }
 
-@media (min-width: 350px) {
+@media (min-width: 540px) {
+  .user-info__item {
+    width: 433px;
+  }
+
+  body {
+    padding-bottom: 175px;
+  }
+
+  .footer__item {
+    display: none;
+    width: 100%;
+  }
+
+  .footer__item:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-about {
+    margin-top: 30px;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .drop-down-menu {
+    display: none;
+  }
 
   .researches__bg {
     background: url("../img/researches-block-bg.jpg") center no-repeat;
@@ -82,30 +112,26 @@ $grey-dark: #525050;
     &__row:first-child {
       display: flex;
     }
-
+    background-color: $grey-light;
     .logo {
       display: flex;
     }
   }
 }
 
-@media (min-width: 597px) {
-
-  body {
-    padding-bottom: 140px;
-  }
-}
-
-
 
 @media (min-width: 720px) {
 
+  .footer__address {
+    max-width: 300px;
+  }
+
+  body{
+    padding-bottom: 140px;
+  }
+
   .header {
     background-color: white;
-
-    &__wrapper {
-      padding: 0 20px;
-    }
   }
 
   .slider {
@@ -119,23 +145,16 @@ $grey-dark: #525050;
   .contacts-form__label {
     display: flex;
   }
-
-  .user-info__item {
-    width: 433px;
-  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 960px) {
 
-  body {
-    padding-bottom: 140px;
+  .footer__address {
+    min-width: 260px;
   }
-}
-
-@media (min-width: 1025px) {
 
   body {
-    padding-bottom: 197px;
+    padding-bottom: 188px;
   }
 
   .nav {
@@ -143,9 +162,6 @@ $grey-dark: #525050;
   }
 
   .burger-menu {
-    display: none;
-  }
-  .drop-down-menu {
     display: none;
   }
 
@@ -199,38 +215,25 @@ $grey-dark: #525050;
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
-html {
-  height: 100%;
-}
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
-  min-height: 100%;
-  position: relative;
-}
-
-h1 {
+.h1 {
   color: $color-white;
-  font-size: 40px;
+  font-size: 32px;
+  line-height: 36px;
 }
 
-h2 {
+.h2 {
   font-size: 26px;
   font-weight: 400;
   text-align: center;
 }
-h3 {
+.h3 {
   color: $color-white;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-h4 {
+.h4 {
   font-size: 14px;
   font-weight: 400;
   color: $grey-dark;
@@ -246,11 +249,12 @@ h4 {
   margin: 0 auto;
 }
 
-/*Стили шапка*/
+/*Styles header*/
 
 .header {
 
   &__wrapper {
+    padding: 0 20px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -333,6 +337,7 @@ h4 {
     font-size: 16px;
     margin-right: 15px;
     font-weight: 600;
+    list-style: none;
 
     &:first-child {
       margin-left: 30px;
@@ -348,7 +353,7 @@ h4 {
   }
 }
 
-/*Стили выпадающее меню*/
+/*Styles drop-down menu*/
 
 .burger-menu {
   justify-content: flex-end;
@@ -366,6 +371,7 @@ h4 {
   background-color: $grey-light;
   flex-direction: column;
   text-align: center;
+  padding: 20px 0;
 
   &__item {
     padding: 4px 0;
@@ -378,12 +384,27 @@ h4 {
   }
 }
 
-/*Стили для слайдера*/
+/*Styles slider*/
 
 .slider {
 
- &__wrapper
-  {
+  .shadow {
+    background-color: $color-black;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     margin: 0 auto;
   }
 
@@ -393,8 +414,9 @@ h4 {
 
   &__text {
     position: absolute;
-    bottom: 60%;
-    left: 8%;
+    top: 15%;
+    max-width: 600px;
+    padding-left: 20px;
   }
 
   .slick-prev{
@@ -434,7 +456,7 @@ h4 {
   }
 }
 
-/*Стили блока о нас*/
+/*Styles information about*/
 
 .info-about {
   min-height: 200px;
@@ -510,21 +532,7 @@ h4 {
   }
 }
 
-.socials {
-  padding: 30px 20px;
-  min-height: 120px;
-  background: url("../img/socials-bg.jpg") no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h2 {
-    color: $color-white;
-  }
-}
-
-/*Стили контакты*/
+/*Styles contacts*/
 
 .contacts {
   margin-top: 30px;
@@ -614,6 +622,11 @@ h4 {
   &__label {
     font-size: 22px;
     margin-right: 15px;
+
+    &:after {
+      content: '*';
+      color: $color-main;
+    }
   }
 
   &__input {
@@ -624,46 +637,60 @@ h4 {
     box-sizing: border-box;
     padding: 5px 10px;
   }
-  &__label {
-    &_required {
-      color: $color-main;
-    }
-  }
 }
 
 [placeholder] {
   font-style: italic;
 }
 
-/*Стили соцсети*/
+/*Styles socials*/
 
-.socials-list {
+.socials {
+  padding: 30px 20px;
+  min-height: 120px;
+  background: url("../img/socials-bg.jpg") no-repeat;
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
 
-  &__item {
-    width: 45px;
-    height: 45px;
-    background-color: $color-white;
-    font-size: 30px;
+  .link {
+    @include link(none, $color-black, $color-black);
+  }
+
+  .h2 {
+    color: $color-white;
+  }
+
+  .socials-list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 16px;
-    color: $color-black;
+    margin-top: 20px;
 
-    &:hover {
-      transform: scale(1.1, 1.1);
-    }
+    &__item {
+      width: 45px;
+      height: 45px;
+      background-color: $color-white;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      color: $color-black;
 
-    &:last-child {
-      margin-right: 0;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
 
-/*Стили подвал*/
+
+/*Styles footer*/
 
 .footer {
   background-color: $color-main;
@@ -674,13 +701,9 @@ h4 {
   right: 0;
   left: 0;
 
-  &__address {
-    min-width: 280px;
-    width: 280px;
-  }
-
   &__wrapper {
-    padding: 20px 0;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     max-width: 1200px;
     width: 100%;
@@ -690,13 +713,13 @@ h4 {
 
   .logo {
     display: flex;
-    @include logo(url("../img/logo-bsu-feather-white.png"), $color-white, 75px, 50px, 18px, 20px);
+    @include logo(url("../img/logo-bsu-feather-white.png"), $color-white, 75px, 50px, 16px, 20px);
     margin-bottom: 20px;
     margin-right: 20px;
   }
 
   &__item {
-    padding: 0 10px;
+    padding: 0 8px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -713,11 +736,6 @@ h4 {
     &:last-child {
       border-right: none;
     }
-
-    &:nth-child(3) {
-      padding: 0;
-      width: 140px;
-    }
   }
 }
 
@@ -725,6 +743,7 @@ h4 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  list-style: none;
 
   &__item {
     margin-left: 10px;

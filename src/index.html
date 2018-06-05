@@ -11,10 +11,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-        <!--Стили слайдера-->
+        <!--Styles slider-->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
-
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     </head>
     <body>
         <header class="header">
@@ -39,245 +39,230 @@
                     <hr class="logo__vertical-line">
                     <p class="logo__text">кафедра<br/>интеллектуальных<br/>систем<br/>бгу</p>
                 </div>
-                <div class="nav">
-                    <div class="nav__item">
-                            <a class="link" href="index.html">История</a>
-                        </div>
-                    <div class="nav__item">
-                            <a class="link" href="index.html">Персоналии</a>
-                        </div>
-                    <div class="nav__item">
-                            <a class="link" href="index.html">Студенты</a>
-                        </div>
-                    <div class="nav__item">
-                            <a class="link" href="index.html">Наука</a>
-                        </div>
-                    <div class="nav__item">
-                            <a class="link" href="index.html">Образование</a>
-                        </div>
-                    <div class="nav__item">
-                            <a class="link" href="index.html">О нас</a>
-                        </div>
-                    <div class="nav__item">
-                            <a class="link" href="index.html">Контакты</a>
-                        </div>
-                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__item"><a class="link" href="index.html">История</a></li>
+                        <li class="nav__item"><a class="link" href="index.html">Персоналии</a></li>
+                        <li class="nav__item"><a class="link" href="index.html">Учащиеся</a></li>
+                        <li class="nav__item"><a class="link" href="index.html">Наука</a></li>
+                        <li class="nav__item"><a class="link" href="index.html">Oбразование</a></li>
+                        <li class="nav__item"><a class="link" href="index.html">Контакты</a></li>
+                    </ul>
+                </nav>
                 <div class="burger-menu">
                     <i class="fa fa-bars"></i>
                 </div>
             </div>
-            <div class="drop-down-menu">
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">История</a>
-                </div>
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">Персоналии</a>
-                </div>
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">Студенты</a>
-                </div>
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">Наука</a>
-                </div>
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">Образование</a>
-                </div>
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">О нас</a>
-                </div>
-                <div class="drop-down-menu__item">
-                    <a class="link" href="index.html">Контакты</a>
-                </div>
-            </div>
+            <nav class="drop-down-menu">
+                <ul>
+                    <li class="drop-down-menu__item"><a class="link" href="index.html">История</a></li>
+                    <li class="drop-down-menu__item"><a class="link" href="index.html">Персоналии</a></li>
+                    <li class="drop-down-menu__item"><a class="link" href="index.html">Учащиеся</a></li>
+                    <li class="drop-down-menu__item"><a class="link" href="index.html">Наука</a></li>
+                    <li class="drop-down-menu__item"><a class="link" href="index.html">Oбразование</a></li>
+                    <li class="drop-down-menu__item"><a class="link" href="index.html">Контакты</a></li>
+                </ul>
+            </nav>
         </header>
-        <div class="slider">
-            <div class="slider__slide">
-                <img  src="img/slider-img-1.jpg" class="slider__img"/>
-                <div class="slider__text">
-                    <h1>Lorem ipsum dolor</h1>
-                    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+        <main>
+            <div class="slider">
+                <div class="slider__slide">
+                    <img  src="./img/slider-img-1.jpg" alt="Кафедра интеллектуальных систем БГУ" class="slider__img"/>
+                    <div class="shadow"></div>
+                    <div class="slider__wrapper">
+                        <div class="slider__text">
+                            <h1 class="h1">Кафедра интеллектуальных систем БГУ</h1>
+                            <h3 class="h3">Подготовки специалистов, способных решать широкий круг научно-практических проблем</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="slider__slide">
-                <img  src="img/slider-img-2.jpg" class="slider__img"/>
-                <div class="slider__text">
-                    <h1>Lorem ipsum dolor</h1>
-                    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-                </div>
-            </div>
-        </div>
-        <div class="info-about__wrapper info-about">
-            <h2>О кафедре</h2>
-            <h4>Узнайте больше о кафедре интеллектуальных систем БГУ</h4>
-            <p class="info-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ad amet autem dicta ducimus eius esse et, ex exercitationem in
-                laudantium neque obcaecati officia officiis, omnis optio, possimus quisquam quos voluptas.
-                Asperiores corporis, error, harum illo itaque nobis officia quam quos rem repudiandae,
-                sint temporibus tenetur. Beatae blanditiis deleniti ducimus eveniet facilis illum, laborum
-                laudantium libero magni molestias nemo quis voluptates.Alias animi dolore dolorum ducimus ea,
-                eaque earum expedita facere fugit hic id illum incidunt itaque
-                maiores minus nostrum officia provident quas repellat sequi sit soluta sunt tempore ullam voluptatum.</p>
-        </div>
-        <div class="researches">
-            <div class="researches__bg">
-                <div class="researches__content">
-                    <h2>Предметы исследований</h2>
-                    <h4>Узнайте больше о кафедре интеллектуальных систем БГУ</h4>
-                    <div class="wrapper researches-list">
-                        <div class="researches-list__item">
-                            <div class="research-icon-bg">
-                                <i class="fa fa-map research-icon"></i>
-                            </div>
-                            <div class="research-name-bg">
-                                <p class="research-name">Распознавание образов</p>
-                            </div>
-                        </div>
-                        <div class="researches-list__item">
-                            <div class="research-icon-bg">
-                                <i class="fa fa-desktop research-icon"></i>
-                            </div>
-                            <div class="research-name-bg">
-                                <p class="research-name">Машинное обучение</p>
-                            </div>
-                        </div>
-                        <div class="researches-list__item">
-                            <div class="research-icon-bg">
-                                <i class="fa fa-connectdevelop research-icon"></i>
-                            </div>
-                            <div class="research-name-bg">
-                                <p class="research-name">Нейросетевые технологии</p>
-                            </div>
-                        </div>
-                        <div class="researches-list__item">
-                            <div class="research-icon-bg">
-                                <i class="fa fa-magic research-icon"></i>
-                            </div>
-                            <div class="research-name-bg">
-                                <p class="research-name">Интеллектуальные системы
-                                    на основе нечеткой логики</p>
-                            </div>
-                        </div>
-                        <div class="researches-list__item">
-                            <div class="research-icon-bg">
-                                <i class="fa fa-compass research-icon"></i>
-                            </div>
-                            <div class="research-name-bg">
-                                <p class="research-name">Системы навигации и
-                                    позиционирования</p>
-                            </div>
+                <div class="slider__slide">
+                    <img src="./img/slider-img-2.jpg" alt="Множество специальных курсов" class="slider__img"/>
+                    <div class="shadow"></div>
+                    <div class="slider__wrapper">
+                        <div class="slider__text">
+                            <h1 class="h1">Множество специальных курсов</h1>
+                            <h3 class="h3">Физические основы формирования изображений,<br/>
+                                основы искусственного интеллекта и др.
+                            </h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contacts">
-            <h2>Свяжитесь с нами</h2>
-            <h4>Узнайте больше о кафедре интеллектуальных систем БГУ</h4>
-            <div class="contacts-details">
-                <div class="contacts-details-wrapper">
-                    <div class="contacts-details__item">
-                        <i class="icon fa fa-phone"></i>
-                        <p>+375-17 209-58-36</p>
-                    </div>
-                    <div class="contacts-details__item">
-                        <i class="icon fa fa-phone"></i>
-                        <p>+375-17 209-58-35</p>
-                    </div>
-                    <div class="contacts-details__item">
-                        <i class="icon fa fa-envelope"></i>
-                        <p>kozadaeff@mail.ru</p>
+            <div class="info-about__wrapper info-about">
+                <h2 class="h2">О кафедре</h2>
+                <h4 class="h4">Узнайте больше о кафедре интеллектуальных систем БГУ</h4>
+                <p class="info-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ad amet autem dicta ducimus eius esse et, ex exercitationem in
+                    laudantium neque obcaecati officia officiis, omnis optio, possimus quisquam quos voluptas.
+                    Asperiores corporis, error, harum illo itaque nobis officia quam quos rem repudiandae,
+                    sint temporibus tenetur. Beatae blanditiis deleniti ducimus eveniet facilis illum, laborum
+                    laudantium libero magni molestias nemo quis voluptates.Alias animi dolore dolorum ducimus ea,
+                    eaque earum expedita facere fugit hic id illum incidunt itaque
+                    maiores minus nostrum officia provident quas repellat sequi sit soluta sunt tempore ullam voluptatum.</p>
+            </div>
+            <div class="researches">
+                <div class="researches__bg">
+                    <div class="researches__content">
+                        <h2 class="h2">Предметы исследований</h2>
+                        <h4 class="h4">Научные направления кафедры интеллектуальных систем БГУ</h4>
+                        <div class="wrapper researches-list">
+                            <div class="researches-list__item">
+                                <div class="research-icon-bg">
+                                    <i class="fa fa-map research-icon"></i>
+                                </div>
+                                <div class="research-name-bg">
+                                    <p class="research-name">Распознавание образов</p>
+                                </div>
+                            </div>
+                            <div class="researches-list__item">
+                                <div class="research-icon-bg">
+                                    <i class="fa fa-desktop research-icon"></i>
+                                </div>
+                                <div class="research-name-bg">
+                                    <p class="research-name">Машинное обучение</p>
+                                </div>
+                            </div>
+                            <div class="researches-list__item">
+                                <div class="research-icon-bg">
+                                    <i class="fa fa-connectdevelop research-icon"></i>
+                                </div>
+                                <div class="research-name-bg">
+                                    <p class="research-name">Нейросетевые технологии</p>
+                                </div>
+                            </div>
+                            <div class="researches-list__item">
+                                <div class="research-icon-bg">
+                                    <i class="fa fa-magic research-icon"></i>
+                                </div>
+                                <div class="research-name-bg">
+                                    <p class="research-name">Интеллектуальные системы
+                                        на основе нечеткой логики</p>
+                                </div>
+                            </div>
+                            <div class="researches-list__item">
+                                <div class="research-icon-bg">
+                                    <i class="fa fa-compass research-icon"></i>
+                                </div>
+                                <div class="research-name-bg">
+                                    <p class="research-name">Системы навигации и
+                                        позиционирования</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <form class="wrapper contacts-form">
-                <div class="contacts-form__fields">
-                    <div class="user-info">
-                        <div class="user-info__item">
-                            <label class="contacts-form__label">Имя<span class="contacts-form__label_required" >*</span></label>
-                            <input type="text"  class="contacts-form__input" placeholder="Введите имя" required>
+            <div class="contacts">
+                <h2 class="h2">Свяжитесь с нами</h2>
+                <h4 class="h4">Получите ответы на интересующие Вас вопросы о кафедре интеллектуальных систем БГУ</h4>
+                <div class="contacts-details">
+                    <div class="contacts-details-wrapper">
+                        <div class="contacts-details__item">
+                            <i class="icon fa fa-phone"></i>
+                            <p>+375-17 209-58-36</p>
                         </div>
-                        <div class="user-info__item">
-                            <label class="contacts-form__label">Телефон<span class="contacts-form__label_required" >*</span></label>
-                            <input type="text"  class="contacts-form__input" placeholder="Введите номер телефона" required>
+                        <div class="contacts-details__item">
+                            <i class="icon fa fa-phone"></i>
+                            <p>+375-17 209-58-35</p>
                         </div>
-                        <div class="user-info__item">
-                            <label class="contacts-form__label">E-mail<span class="contacts-form__label_required" >*</span></label>
-                            <input type="email"  class="contacts-form__input" placeholder="Введите e-mail" required>
+                        <div class="contacts-details__item">
+                            <i class="icon fa fa-envelope"></i>
+                            <p>kozadaeff@mail.ru</p>
                         </div>
                     </div>
-                    <div class="user-message">
-                        <label class="contacts-form__label">Сообщение<span class="contacts-form__label_required" >*</span></label>
-                        <textarea  class="contacts-form__input user-message__text" placeholder="Введите текст сообщения" required></textarea>
+                </div>
+                <form class="wrapper contacts-form">
+                    <div class="contacts-form__fields">
+                        <div class="user-info">
+                            <div class="user-info__item">
+                                <label for="user-name" class="contacts-form__label">Имя</label>
+                                <input id="user-name" type="text"  class="contacts-form__input" placeholder="Введите имя" >
+                            </div>
+                            <div class="user-info__item">
+                                <label for="user-phone" class="contacts-form__label">Телефон</label>
+                                <input id="user-phone" type="tel"  class="contacts-form__input" placeholder="Введите номер телефона" pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                            </div>
+                            <div class="user-info__item">
+                                <label for="user-email" class="contacts-form__label">E-mail</label>
+                                <input id="user-email" type="email" class="contacts-form__input" placeholder="Введите e-mail" >
+                            </div>
+                        </div>
+                        <div class="user-message">
+                            <label for="user-message" class="contacts-form__label">Сообщение</label>
+                            <textarea id="user-message" class="contacts-form__input user-message__text" placeholder="Введите текст сообщения"></textarea>
+                        </div>
                     </div>
-                </div>
-                <button class="contacts-form__btn">отправить</button>
-            </form>
-        </div>
-        <div class="socials">
-            <h2>Следите за нами в соцсетях:</h2>
-            <div class="socials-list">
-                <div class="socials-list__item">
-                    <i class="fa fa-vk"></i>
-                </div>
-                <div class="socials-list__item">
-                    <i class="fa fa-facebook"></i>
-                </div>
-                <div class="socials-list__item">
-                    <i class="fa fa-twitter"></i>
-                </div>
+                    <button class="contacts-form__btn">отправить</button>
+                </form>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="footer__wrapper">
-                <div class="footer__item">
-                    <div class="logo">
-                        <div class="logo__image">
-                        </div>
-                        <hr class="logo__vertical-line">
-                        <p class="logo__text">Белорусский<br/>государственный<br/>университет</p>
+            <div class="socials">
+                <h2 class="h2">Следите за нами в соцсетях:</h2>
+                <div class="socials-list">
+                    <div class="socials-list__item">
+                        <a href="index.html" class="link"><i class="fa fa-vk"></i></a>
                     </div>
-                    <div class="footer__address">
-                        Адрес: пр. Независимости, 4, 220030, г. Минск, Республика Беларусь.<br/>
-                        Тел: + 375 17 209 50 44
+                    <div class="socials-list__item">
+                        <a href="index.html" class="link"><i class="fa fa-facebook"></i></a>
                     </div>
-                </div>
-                <div class="footer__item">
-                    <div class="logo">
-                        <div class="logo__image">
-                        </div>
-                        <hr class="logo__vertical-line">
-                        <p class="logo__text">Факультет<br/>радиофизики и<br/>компьютерных<br/>технологий</p>
-                    </div>
-                    <div class="footer__address">
-                        Адрес: ул. Курчатова 5, к. 621, 220064 г. Минск, Республика Беларусь.<br/>
-                        Тел: + 375 17 209 59 36
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <div class="site-map">
-                        <div class="site-map__item"><a class="link">История</a></div>
-                        <div class="site-map__item"><a class="link">Персоналии</a></div>
-                        <div class="site-map__item"><a class="link">Студенты</a></div>
-                        <div class="site-map__item"><a class="link">Наука</a></div>
-                        <div class="site-map__item"><a class="link">Образование</a></div>
-                        <div class="site-map__item"><a class="link">О нас</a></div>
-                        <div class="site-map__item"><a class="link">Контакты</a></div>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <div class="logo">
-                        <div class="logo__image">
-                        </div>
-                        <hr class="logo__vertical-line">
-                        <p class="logo__text">кафедра<br/>интеллектуальных<br/>систем<br/>бгу</p>
-                    </div>
-                    <div class="footer__address">
-                        Адрес: ул. Курчатова 5, к. 621, 220064 г. Минск, Республика Беларусь.<br/>
-                        Тел: + 375 17 209 59 36
+                    <div class="socials-list__item">
+                        <a href="index.html" class="link"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
+            <footer class="footer">
+                <div class="footer__wrapper">
+                    <div class="footer__item">
+                        <div class="logo">
+                            <div class="logo__image">
+                            </div>
+                            <hr class="logo__vertical-line">
+                            <p class="logo__text">Белорусский<br/>государственный<br/>университет</p>
+                        </div>
+                        <div class="footer__address">
+                            Адрес: пр. Независимости, 4, 220030, г. Минск, Республика Беларусь.<br/>
+                            Тел: + 375 17 209 50 44
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="logo">
+                            <div class="logo__image">
+                            </div>
+                            <hr class="logo__vertical-line">
+                            <p class="logo__text">Факультет<br/>радиофизики и<br/>компьютерных<br/>технологий</p>
+                        </div>
+                        <div class="footer__address">
+                            Адрес: ул. Курчатова 5, к. 621, 220064 г. Минск, Республика Беларусь.<br/>
+                            Тел: + 375 17 209 59 36
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <nav>
+                            <ul class="site-map">
+                                <li class="site-map__item"><a href="index.html" class="link">История</a></li>
+                                <li class="site-map__item"><a href="index.html" class="link">Персоналии</a></li>
+                                <li class="site-map__item"><a href="index.html" class="link">Учащиеся</a></li>
+                                <li class="site-map__item"><a href="index.html" class="link">Наука</a></li>
+                                <li class="site-map__item"><a href="index.html" class="link">Образование</a></li>
+                                <li class="site-map__item"><a href="index.html" class="link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <div class="logo">
+                            <div class="logo__image">
+                            </div>
+                            <hr class="logo__vertical-line">
+                            <p class="logo__text">кафедра<br/>интеллектуальных<br/>систем<br/>бгу</p>
+                        </div>
+                        <div class="footer__address">
+                            Адрес: ул. Курчатова 5, к. 621, 220064 г. Минск, Республика Беларусь.<br/>
+                            Тел: + 375 17 209 59 36
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     </body>
 </html>

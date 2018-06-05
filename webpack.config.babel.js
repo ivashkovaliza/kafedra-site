@@ -1,6 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import path from "path";
 
 module.exports = {
     mode: 'development',
@@ -21,7 +21,7 @@ module.exports = {
                 {
                     loader: 'file-loader',
                     options: {
-                        limit: 8192
+                        name: '[path][name].[ext]'
                     }
                 }
             ]
@@ -37,7 +37,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({template: "./index.html", inject: true,}),
-        new CopyWebpackPlugin([ { from: './img', to: './img' } ])
+        new HtmlWebpackPlugin({template: "./index.html", inject: true,})
     ],
 };
