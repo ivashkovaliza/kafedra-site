@@ -7,9 +7,9 @@ $ npm install
 
 ###Build the project:
 
-$npm build
+$npm run build
 
 ###Start the project:
 
-$npm start
+$npm run start
 
