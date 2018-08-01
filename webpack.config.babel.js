@@ -1,11 +1,12 @@
+import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import path from "path";
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
 
 module.exports = {
     mode: 'development',
     context: path.resolve(__dirname, 'src'),
-    entry: ["./index.js", "./index.html"],
+    entry: ["./index.js"],
     output: {
         path: path.join(__dirname, 'dist'),
         filename: "bundle.js",
@@ -13,8 +14,14 @@ module.exports = {
     watch: true,
     module: {
         rules: [{
-            test: /\.scss$/,
-            loader: 'style-loader!css-loader!sass-loader',
+          test: /\.scss$/,
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader
+            },
+            'css-loader',
+            'sass-loader',
+          ]
         },  {
             test: /\.(png|jpg|gif)$/,
             use: [
@@ -37,6 +44,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({template: "./index.html", inject: true,})
+      new HtmlWebpackPlugin(),
+      new MiniCssExtractPlugin(),
     ],
 };
