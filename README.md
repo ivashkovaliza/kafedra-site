@@ -5,11 +5,11 @@ kafedra-site
 
 $ npm install
 
-###Build the project:
+###Build the project in development mode:
 
-$npm run build
+$npm run dev
 
-###Start the project:
+###Build the project in production mode:
 
-$npm run start
+$npm run prod
 

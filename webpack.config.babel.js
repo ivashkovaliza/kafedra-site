@@ -4,7 +4,6 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 
 module.exports = {
-    mode: 'development',
     context: path.resolve(__dirname, 'src'),
     entry: ["./index.js"],
     output: {
@@ -44,7 +43,7 @@ module.exports = {
         ]
     },
     plugins: [
-      new HtmlWebpackPlugin(),
+      new HtmlWebpackPlugin({template: "./index.html", inject: true,}),
       new MiniCssExtractPlugin(),
     ],
 };

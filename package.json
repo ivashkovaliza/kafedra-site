@@ -1,11 +1,11 @@
 {
-  "name": "kafedra-site",
+  "name": "university-department",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
-    "build": "webpack"
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
