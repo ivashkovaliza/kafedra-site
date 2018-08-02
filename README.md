@@ -1,7 +1,7 @@
 kafedra-site
 -----------------------------------
 
-###Install Kafedra-site:
+###Install University department main page:
 
 $ npm install
 
