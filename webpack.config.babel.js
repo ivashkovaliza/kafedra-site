@@ -4,6 +4,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 
 module.exports = {
+    mode: 'production',
     context: path.resolve(__dirname, 'src'),
     entry: ["./index.js"],
     output: {
