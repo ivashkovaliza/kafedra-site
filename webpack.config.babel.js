@@ -1,6 +1,7 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 
 
 module.exports = {
@@ -44,5 +45,6 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({template: "./index.html", inject: true,}),
       new MiniCssExtractPlugin(),
+      new OptimizeCssAssetsPlugin()
     ],
 };
